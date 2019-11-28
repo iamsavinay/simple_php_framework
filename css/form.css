@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Spirax|Roboto:300,400,600");
+* {
+  box-sizing: border-box;
+}
+
+/* style for login and register form  -- start */
+.form-body {
+  display: table;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/img/login_bg.svg");
+  background-size: cover;
+}
+
+.form-title {
+  font-size: 20px;
+  font-family: "Spirax", cursive;
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container {
+  font-size: 16px;
+  margin: 80px auto 20px;
+  border-radius: 3px;
+  background: #fff;
+  padding: 20px;
+  width: 40%;
+  min-width: 300px;
+}
+
+.form-container form .form-group {
+  display: table;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.form-container form .error-message ul {
+  width: 100%;
+  border: 5px;
+  background-color: tomato;
+  font-family: "Roboto", serif;
+}
+
+.form-container form .error-message ul li {
+  padding: 2px 5px 2px;
+}
+
+.form-container form .error-message ul li:first-child {
+  padding-top: 5px;
+}
+
+.form-container form .error-message ul li:last-child {
+  padding-bottom: 10px;
+}
+
+.form-container form label {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+}
+
+.form-container form input[type='text'],
+.form-container form input[type='password'] {
+  background: #fff;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #efefef;
+  transition: all linear .1s;
+  padding: 5px 5px;
+  font-size: 17px;
+  font-family: "Roboto", serif;
+  background: transparent;
+  width: 100%;
+}
+
+.form-container form input[type='text']:active,
+.form-container form input[type='text']:focus,
+.form-container form input[type='password']:active,
+.form-container form input[type='password']:focus {
+  border: 1px solid blue;
+}
+
+.form-container form a.tplink {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #3a4450;
+  font-family: "Roboto", serif;
+  font-size: 17px;
+  color: #fff;
+  margin: 10px auto;
+}
+
+.form-container form .btn-primary {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-container form .btn-primary:focus,
+.form-container form .btn-primary:hover {
+  background: #0053ba;
+}
+
+.form-container form .btn-primary:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.form-container form .btn-primary:active {
+  transform: scale(0.99);
+}
+
+/* style for login and register form  -- end */

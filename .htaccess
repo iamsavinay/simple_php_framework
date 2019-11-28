@@ -1,0 +1,9 @@
+# Supported on Apache Version >=2.2.16 
+FallbackResource /index.php
+
+
+## For older Apache Versions
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ /index.php [L]

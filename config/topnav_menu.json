@@ -1,0 +1,28 @@
+{
+    "topnav": {
+        "Colleges": "college",
+        "Admission": "admission",
+        "Exams": "exam",
+        "News": "news",
+        "Counselling": "counselling"
+    },
+    "sidenav" : {
+        "Colleges": "college",
+        "Exams": "exam",
+        "About": {
+            "About Us": "about/aboutus",
+            "Privacy Policy": "about/privacy",
+            "Contact Us": "about/contact"
+        },
+        "Admin Section": {
+            "Admin Home" : "admin",
+            "Manage Users" : "admin/user"
+        },
+        "Content Management": {
+            "Content Home" : "contentman",
+            "Manage News" : "contentman/news",
+            "Manage Colleges" : "contentman/college",
+            "Manage Exam" : "contentman/exam"
+        }
+    }
+}

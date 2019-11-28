@@ -1,0 +1,148 @@
+/**
+ * Workzone
+ */
+.elfinder-workzone {
+    background: @workzone-bg;
+}
+
+.elfinder-cwd-file {
+    color: @cwd-file-color;
+
+    &.ui-state-hover,
+    &.ui-selected.ui-state-hover {
+        background: @cwd-file-hover-bg;
+        color: @cwd-file-hover-color;
+    }
+
+    &.ui-selected {
+        background: darken(@cwd-file-hover-bg, 3%);
+        color: @cwd-file-color;
+    }
+}
+
+.elfinder-cwd-filename {
+    input,
+    textarea {
+        padding: 2px;
+        .border-radius(2px) !important;
+        width: 100px !important;
+        background: #fff;
+        color: #222;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #555;
+        }
+    }
+}
+
+.elfinder-cwd-view-icons .elfinder-cwd-file .ui-state-hover,
+.elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
+.elfinder-disabled .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
+.elfinder-disabled .elfinder-cwd table td.ui-state-hover,
+.elfinder-cwd-view-icons .elfinder-cwd-file .ui-state-active {
+    background: transparent;
+    color: @cwd-file-hover-color;
+}
+
+.elfinder-cwd {
+    table {
+        padding: 0;
+
+        thead {
+            td {
+                padding: 5px 14px;
+            }
+        }
+
+        tr {
+            border: 0 !important;
+
+            &:nth-child(odd) {
+                background-color: transparent;
+
+                &.ui-state-hover {
+                    background-color: @cwd-file-hover-bg;
+                }
+            }
+        }
+    }
+
+    &.elfinder-table-header-sticky table {
+        border: 0;
+    }
+
+    .elfinder-lock,
+    .elfinder-perms,
+    .elfinder-symlink {
+        color: @cwd-icons-color;
+    }
+}
+
+.elfinder-cwd-view-icons {
+    .elfinder-lock {
+        top: 0;
+    }
+}
+
+.elfinder-cwd-view-list {
+    thead td .ui-resizable-handle {
+        top: 3px;
+    }
+
+    .elfinder-lock,
+    .elfinder-perms,
+    .elfinder-symlink {
+        font-size: 14px/1;
+        opacity: .7;
+    }
+
+    .elfinder-perms {
+        left: inherit;
+    }
+}
+
+#elfinder-elfinder-cwd-thead {
+    td {
+        background: @cwd-thead;
+        color: @cwd-thead-color;
+
+        &.ui-state-hover,
+        &.ui-state-active {
+            background: darken(@cwd-thead, 5%);
+        }
+
+        &.ui-state-active.ui-state-hover {
+            background: darken(@cwd-thead, 3%);
+        }
+    }
+}
+
+.ui-selectable-helper {
+    border: 1px solid @selectable-border;
+    background-color: @selectable-bg;
+}
+
+.elfinder-cwd-wrapper.elfinder-cwd-wrapper-trash {
+    background-color: @workzone-trash-bg;
+
+    .elfinder-cwd-file {
+        color: @workzone-trash-color;
+
+        &.ui-state-hover,
+        &.ui-selected.ui-state-hover {
+            background: @cwd-file-hover-bg;
+            color: @cwd-file-hover-color;
+        }
+
+        &.ui-selected {
+            background: darken(@cwd-file-hover-bg, 3%);
+            color: @cwd-file-color;
+        }
+    }
+}
+
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-bgurl:after,
+.elfinder .elfinder-quicklook-info-wrapper .elfinder-cwd-bgurl:after {
+    display: none;
+}

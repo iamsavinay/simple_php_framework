@@ -1,0 +1,162 @@
+$article_font_Color: #444;
+
+
+
+
+article {
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif;
+
+    * {
+        max-width: 100% !important;
+    }
+
+    // title
+    h1.title {
+        font-family: 'Lato';
+        font-weight: 600;
+        font-size: 40px;
+        margin: 20px 0px;
+        color: #8e9d21;
+        padding: 5px 0;
+
+        &::before {
+            content: '';
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #FFBC00;
+            margin-right: 10px;
+        }
+    }
+
+    // title description
+    h6.desc {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 0;
+        margin: 0;
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    // heading
+    h1:not(:nth-child(1)) {
+        font-size: 30px;
+        color: #2c6ee9;
+        font-weight: 600;
+        margin: 20px 0;
+        position: relative;
+        padding: 5px 0;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            border-bottom: 3px solid #2c6ee9;
+        }
+    }
+
+    // sub heading
+    h2 {
+        font-size: 22px;
+        color: #f81d1d;
+        margin: 15px 0;
+        position: relative;
+        padding: 5px 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20%;
+            border-bottom: 3px solid #f81d1d;
+        }
+    }
+
+    // sub sub heading
+    h3 {
+        color: #333;
+        font-size: 19px;
+        margin: 15px 0;
+        position: relative;
+        padding: 5px 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            border-bottom: 3px solid #333;
+        }
+    }
+
+    h4 {
+        color: #222;
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    h5{
+        font-size: 18px;
+        margin: 15px 0;
+        color: #222;
+    }
+
+    h6{
+        font-size: 18px;
+        margin: 15px 0;
+        color: #222;
+    }
+
+    p {
+        text-align: justify;
+        text-justify: auto;
+        font-size: 17px;
+        line-height: 1.5;
+        color: #444;
+        margin: 10px 0 15px;
+    }
+
+    blockquote {
+        background-color: #e8e8e8;
+        border-left: 5px solid #FFBC00;
+        padding: 10px;
+        line-height: 1.5;
+        margin: 0 3%;
+        color: #333;
+    }
+
+    ul{
+        list-style-type: disc;
+        color: $article_font_Color;
+
+        li{
+            line-height: 2;
+        }
+    }
+
+    ol{
+        list-style-type: decimal;
+        color: $article_font_Color;
+
+        li{
+            line-height: 2;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    article{
+        h1{
+            font-size: 40px;
+        }
+    }
+}

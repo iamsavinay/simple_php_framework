@@ -1,0 +1,61 @@
+{
+    "topnav-1" : {
+        "Colleges" : "college",
+        "Exams" : "exam",
+        "About" : {
+            "About Us" : "about/aboutus",
+            "Privacy Policy" : "about/privacy",
+            "Contact Us" : "about/cotact"
+        },
+        "Register" : "user/register",
+        "Login" : "user/login",
+        "Logout" : "user/logout"
+    },
+    "topnav-2" : {
+        "Engineering" : {
+            "Government Colleges" : {
+                "College 1" : "college/1",
+                "College 2" : "college/2"
+            },
+            "Private Colleges" : {
+                "College 3" : "college/3"
+            },
+            "Top Colleges" : {
+                "College 4" : "college/4",
+                "College 5" : {
+                    "sss" : "scoo",
+                    "sdw" : "scoo"
+                },
+                "College 6" : "college/6"
+            }
+        },
+        "Medical" : {
+            "Government Med Colleges" : {
+                "College 7" : "college/7",
+                "College 8" : "college/8"
+            },
+            "Private Med Colleges" : {
+                "College 9" : "college/9"
+            },
+            "Top Med Colleges" : {
+                "College 10" : "college/10",
+                "College 11" : "college/11",
+                "College 12" : "college/12"
+            }
+        },
+        "MBA" : {
+            "Government MBA Colleges" : {
+                "College 1" : "college/13",
+                "College 2" : "college/14"
+            },
+            "Private MBA Colleges" : {
+                "College 3" : "college/15"
+            },
+            "Top MBA Colleges" : {
+                "College 4" : "college/16",
+                "College 5" : "college/17",
+                "College 6" : "college/18"
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+$dfsize: 16px;
+$impact_stack: 'Roboto',
+serif;
+$cursive_stack: 'Spirax',
+cursive;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Spirax|Roboto:300,400,600');
+
+* {
+  box-sizing: border-box;
+}
+
+/* style for login and register form  -- start */
+.form-body {
+  display: table;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/img/login_bg.svg");
+  background-size: cover;
+}
+
+.form-title {
+  font-size: 20px;
+  font-family: $cursive_stack;
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container {
+  font-size: $dfsize;
+  margin: 80px auto 20px;
+  border-radius: 3px;
+  background: #fff;
+  padding: 20px;
+  width: 40%;
+  min-width: 300px;
+
+  form {
+    .form-group {
+      display: table;
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    .error-message {
+      ul {
+        width: 100%;
+        border: 5px;
+        background-color: tomato;
+        font-family: $impact_stack;
+
+        li {
+          padding: 2px 5px 2px;
+        }
+
+        li:first-child {
+          padding-top: 5px;
+        }
+
+        li:last-child {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    label {
+      display: block;
+      width: 100%;
+      padding: 5px 0;
+      font-family: $impact_stack;
+      font-size: 15px;
+    }
+
+    input[type='text'],
+    input[type='password'] {
+      background: #fff;
+      border: 1px solid #b2b2b2;
+      border-radius: 5px;
+      box-shadow: 0 0 0 1px #efefef;
+      transition: all linear .1s;
+      padding: 5px 5px;
+      font-size: 17px;
+      font-family: $impact_stack;
+      background: transparent;
+      width: 100%;
+    }
+
+    input[type='text']:active,
+    input[type='text']:focus,
+    input[type='password']:active,
+    input[type='password']:focus {
+      border: 1px solid blue;
+    }
+
+    a.tplink {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      text-decoration: none;
+      background: #3a4450;
+      font-family: $impact_stack;
+      font-size: 17px;
+      color: #fff;
+      margin: 10px auto;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      border: none;
+      padding: 1rem 2rem;
+      margin: 0;
+      text-decoration: none;
+      background: #0069ed;
+      color: #ffffff;
+      width: 100%;
+      font-family: sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background 250ms ease-in-out, transform 150ms ease;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    .btn-primary:focus,
+    .btn-primary:hover {
+      background: #0053ba;
+    }
+
+    .btn-primary:focus {
+      outline: 1px solid #fff;
+      outline-offset: -4px;
+    }
+
+    .btn-primary:active {
+      transform: scale(0.99);
+    }
+  }
+}
+
+/* style for login and register form  -- end */

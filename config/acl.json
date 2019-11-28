@@ -1,0 +1,54 @@
+{
+    "guest" : {
+        "allowed" : {
+            "Home" : ["*"],
+            "Search" : ["*"],
+            "About" : ["*"],
+            "College" : ["*"],
+            "Admission" : ["*"],
+            "Counselling" : ["*"],
+            "News" : ["*"],
+            "Exam" : ["*"],
+            "Job" : ["*"],
+            "User" : ["login", "register", "auth"] 
+        },
+        "denied" : {
+            
+        }
+    },
+    "user" : {
+        "allowed" : {
+            "User" : ["dashboard", "profile", "logout"],
+            "Plugins" : ["*"]
+        },
+        "denied" : {
+            "User" : ["login", "register", "auth"]
+        }
+    },
+    "staff" : {
+        "allowed" : {
+            "Dynamicman": ["*"]
+        },
+        "denied" : {
+
+        }
+    },
+    "manager" : {
+        "allowed" : {
+            "Contentman": ["*"]
+        },
+        "denied" : {
+
+        }
+    },
+    "admin" : {
+        "allowed" : {
+            "Dynamicman" : ["*"],
+            "Contentman" : ["*"],
+            "Admin" : ["*"]
+        },
+        "denied" : {
+            
+        }
+    }
+}

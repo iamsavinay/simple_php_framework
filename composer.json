@@ -1,0 +1,8 @@
+{
+    "require": {
+        "google/apiclient": "2.0",
+        "league/oauth2-facebook": "2.0",
+        "phpmailer/phpmailer": "^6.0",
+        "abraham/twitteroauth": "^0.9.2"
+    }
+}

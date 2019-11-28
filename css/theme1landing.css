@@ -1,0 +1,108 @@
+.sc-cont {
+  display: block;
+  position: relative;
+  margin: 30px auto 20px;
+  width: 98%;
+  max-width: 1000px;
+}
+
+.sc-cont .sc-head {
+  font-size: 21px;
+  padding: 10px 0;
+  color: #111111;
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: 3px solid #FFBC00;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.sc-cont .sc-body {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.sc-cont .sc-body::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.sc-cont .sc-card {
+  width: 33%;
+  padding: 10px;
+  height: 400px;
+  display: inline-block;
+}
+
+.sc-cont .sc-card a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.sc-cont .sc-card a:hover {
+  opacity: 0.8;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.sc-cont .sc-card a img {
+  position: absolute;
+  height: calc(100% - 150px);
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.sc-cont .sc-card a div {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.sc-cont .sc-card a h4 {
+  margin: 0;
+  padding: 15px 10px 5px;
+}
+
+.sc-cont .sc-card a p {
+  margin: 0;
+  padding: 5px 10px 5px;
+}
+
+.sc-cont .sc-foot {
+  text-align: right;
+  padding: 10px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.sc-cont .sc-foot button {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 10px;
+  background-color: royalblue;
+  color: #f7f7f7;
+  box-shadow: 0 0 0 0 rgba(65, 105, 225, 0.726);
+  transition: 0.2s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sc-cont .sc-foot button:hover {
+  box-shadow: 0 0 0 5px rgba(65, 105, 225, 0.726);
+}

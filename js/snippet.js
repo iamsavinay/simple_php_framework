@@ -1,0 +1,1 @@
+var con_madal_html = '';
