@@ -1,4 +1,4 @@
-# About
+# About (Deprecated: Not Maintained Anymore)
 
 It is a php web framework written from scratch to implement complex web and security features like Access Control, Routing and Logging. This was written by me while i was learning PHP to gain in-depth knowledge of how different parts in a web framework works.
 
